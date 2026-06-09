@@ -1,36 +1,66 @@
+ASTYG Engineering Services Website
+
+Website based on the "Strongly Typed" HTML5 UP template,
+customized for ASTYG Engineering Services.
+
+ASTYG Engineering Services specializes in Mechanical,
+Electrical, Plumbing, and Fire Protection (MEPF) Engineering
+Design, Consultancy, Project Management, and Technical Training.
+
+Services Include:
+
+• HVAC Design and Analysis
+• Plumbing Systems Design
+• Fire Protection Systems Design
+• Pump and Water Distribution Systems
+• Generator and Mechanical Equipment Selection
+• Energy Efficiency and Sustainability Studies
+• Engineering Consultancy and Technical Training
+
+Head Office:
+Koronadal City, South Cotabato, Philippines
+
+Website:
+[www.astyg.com](http://www.astyg.com)
+
+Contact Information:
+Mobile: +63 926 9888 8890
+Viber: +63 926 9888 8890
+
+This website serves as the official online platform of ASTYG
+Engineering Services, showcasing engineering capabilities,
+completed projects, technical resources, and professional services.
+
+Template Information:
+
+Original Template:
 Strongly Typed by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+https://html5up.net
 
+Template Author:
+AJ Kohn (@ajlkn)
 
-This is Strongly Typed, a new site template with a minimal, semi-retro
-look (inspired by old instruction manuals) and, as you might guess from its
-name, a strong emphasis on type. It's fully responsive, built on HTML5/CSS3,
-and includes styling for all basic page elements. Demo images* are courtesy of
-regularjane, an incredibly talented photographer friend of mine. Be sure to
-check out more of her work over at deviantART:
+License:
+CCA 3.0 License
+https://html5up.net/license
 
-http://regularjane.deviantart.com/
-
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Jane's work without her explicit permission!)
-
-As usual, feedback, bug reports, and comments are not only welcome, but strongly
-encouraged :)
-
-AJ
-aj@lkn.io | @ajlkn
-
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
-
+Customized by:
+ASTYG Engineering Services
 
 Credits:
 
-	Demo Images:
-		regularjane (regularjane.deviantart.com)
+Icons:
+Font Awesome
 
-	Icons:
-		Font Awesome (fontawesome.io)
+Libraries:
+jQuery
+
+Framework Components:
+Responsive Tools
+
+All engineering content, project information, graphics,
+logos, and branding elements are the property of
+ASTYG Engineering Services unless otherwise noted.
 
 	Other:
 		jQuery (jquery.com)
