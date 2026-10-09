@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Training | ASTYG Engineering Services</title>
-<meta name="description" content="Technical training for engineers and technicians: HVAC, plumbing, fire sprinkler, pump selection and board exam review.">
-<link rel="canonical" href="https://astyg.com/training.html">
+<title>Free Engineering Calculators | ASTYG Engineering Services</title>
+<meta name="description" content="Free online calculators: estimate aircon size (BTU/h, tons, HP) for a room and water tank size for a building. By ASTYG Engineering Services.">
+<link rel="canonical" href="https://astyg.com/tools.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ASTYG Engineering Services">
-<meta property="og:title" content="Training | ASTYG Engineering Services">
-<meta property="og:description" content="Technical training for engineers and technicians: HVAC, plumbing, fire sprinkler, pump selection and board exam review.">
-<meta property="og:url" content="https://astyg.com/training.html">
+<meta property="og:title" content="Free Engineering Calculators | ASTYG Engineering Services">
+<meta property="og:description" content="Free online calculators: estimate aircon size (BTU/h, tons, HP) for a room and water tank size for a building. By ASTYG Engineering Services.">
+<meta property="og:url" content="https://astyg.com/tools.html">
 <meta property="og:image" content="https://astyg.com/images/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -34,8 +34,8 @@
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="projects.html">Projects</a>
-      <a href="training.html" aria-current="page">Training</a>
-      <a href="tools.html">Tools</a>
+      <a href="training.html">Training</a>
+      <a href="tools.html" aria-current="page">Tools</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="header-actions">
@@ -53,27 +53,63 @@
 
 <section class="page-head dark">
   <div class="wrap">
-    <div class="eyebrow">Technical training</div>
-    <h1>Training for engineers and technicians</h1>
-    <p>Hands-on courses for engineering teams, contractors and new graduates, taught with real project examples.</p>
+    <div class="eyebrow">Free tools</div>
+    <h1>Quick engineering estimates</h1>
+    <p>Rough sizing for early planning and budgeting. For permits and final equipment selection, you need a proper engineering calculation.</p>
   </div>
 </section>
 
-<section>
-  <div class="wrap split">
-    <div>
-      <div class="eyebrow">Courses</div>
-      <h2>What we teach</h2>
-      <p class="intro">Courses can be run for your company or as open classes. Tell us your team size and topics, and we'll send a schedule and fee.</p>
-      <p style="margin-top:24px"><a class="btn" href="contact.html?type=Training">Ask about training</a></p>
+<section class="quote">
+  <div class="wrap">
+    <div class="tools-grid">
+
+      <form class="calc" id="ac-calc" onsubmit="return false">
+        <div class="eyebrow">Calculator 01</div>
+        <h2>Aircon size</h2>
+        <p class="intro">Estimate the cooling capacity for one room.</p>
+        <div class="field"><label for="ac-type">Room type</label>
+          <select id="ac-type">
+            <option value="600">Bedroom</option>
+            <option value="650">Living / dining room</option>
+            <option value="700" selected>Office</option>
+            <option value="750">Store / retail</option>
+            <option value="850">Classroom / conference room</option>
+            <option value="900">Restaurant / eatery</option>
+          </select></div>
+        <div class="row2">
+          <div class="field"><label for="ac-l">Length <small>(m)</small></label><input id="ac-l" type="number" min="0" step="0.1" value="4"></div>
+          <div class="field"><label for="ac-w">Width <small>(m)</small></label><input id="ac-w" type="number" min="0" step="0.1" value="5"></div>
+          <div class="field"><label for="ac-h">Ceiling height <small>(m)</small></label><input id="ac-h" type="number" min="0" step="0.1" value="2.7"></div>
+          <div class="field"><label for="ac-p">People in the room</label><input id="ac-p" type="number" min="0" step="1" value="4"></div>
+        </div>
+        <div class="checks">
+          <label><input type="checkbox" id="ac-roof"> Top floor / roof directly above</label>
+          <label><input type="checkbox" id="ac-sun"> Strong afternoon sun (west windows)</label>
+        </div>
+        <div class="result" id="ac-out" aria-live="polite"></div>
+      </form>
+
+      <form class="calc" id="tank-calc" onsubmit="return false">
+        <div class="eyebrow">Calculator 02</div>
+        <h2>Water tank size</h2>
+        <p class="intro">Estimate domestic water storage for a building.</p>
+        <div class="field"><label for="tk-type">Building type</label>
+          <select id="tk-type">
+            <option value="150">House / residential (per person)</option>
+            <option value="50">Office (per employee)</option>
+            <option value="40">School (per student)</option>
+            <option value="300">Hotel / resort (per guest)</option>
+          </select></div>
+        <div class="row2">
+          <div class="field"><label for="tk-n">Number of people</label><input id="tk-n" type="number" min="0" step="1" value="6"></div>
+          <div class="field"><label for="tk-lpd">Liters per person per day</label><input id="tk-lpd" type="number" min="0" step="5" value="150"></div>
+          <div class="field"><label for="tk-days">Days of storage</label><input id="tk-days" type="number" min="0" step="0.5" value="1"></div>
+        </div>
+        <div class="result" id="tk-out" aria-live="polite"></div>
+        <p class="note">Fire protection water (for sprinklers and hose) is a separate reserve sized under the Fire Code.</p>
+      </form>
+
     </div>
-    <ul class="list">
-      <li><span>HVAC load calculation &amp; equipment sizing</span><span>Design</span></li>
-      <li><span>Plumbing system design fundamentals</span><span>Design</span></li>
-      <li><span>Fire sprinkler hydraulic calculations</span><span>Design</span></li>
-      <li><span>Pump selection &amp; system curves</span><span>Design</span></li>
-      <li><span>Board exam &amp; practice review</span><span>Review</span></li>
-    </ul>
   </div>
 </section>
 
@@ -129,5 +165,6 @@
 </div>
 
 <script src="js/site.js?v=4"></script>
+<script src="js/tools.js?v=4"></script>
 </body>
 </html>

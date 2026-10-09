@@ -1,67 +1,46 @@
 ASTYG Engineering Services Website
+https://astyg.com
 
-Website based on the "Strongly Typed" HTML5 UP template,
-customized for ASTYG Engineering Services.
+ASTYG Engineering Services provides mechanical engineering design
+and MEP consultancy for buildings and industry.
 
-ASTYG Engineering Services specializes in Mechanical,
-Electrical, Plumbing, and Fire Protection (MEPF) Engineering
-Design, Consultancy, Project Management, and Technical Training.
+MEP Services • HVAC • Plumbing • Fire Protection • Pumps • Lifts • Gensets
 
-Services Include:
+Site Inspection and Design | Testing and Certification | Consultancy, Sign and Seal
 
-• HVAC Design and Analysis
-• Plumbing Systems Design
-• Fire Protection Systems Design
-• Pump and Water Distribution Systems
-• Generator and Mechanical Equipment Selection
-• Energy Efficiency and Sustainability Studies
-• Engineering Consultancy and Technical Training
+Head Office:   Koronadal City, South Cotabato, Philippines
+Mobile/Viber:  +63 926 988 8890
+Email:         info@astyg.com
+Facebook:      ASTYG Engineering Services
 
-Head Office:
-Koronadal City, South Cotabato, Philippines
 
-Website:
-[www.astyg.com](http://www.astyg.com)
+WEBSITE FILES
 
-Contact Information:
-Mobile: +63 926 9888 8890
-Viber: +63 926 9888 8890
+  index.html      Home
+  services.html   Services, permits and requirements
+  projects.html   Projects
+  training.html   Technical training
+  tools.html      Free calculators (aircon size, water tank size)
+  contact.html    Contact details and quote request form
 
-This website serves as the official online platform of ASTYG
-Engineering Services, showcasing engineering capabilities,
-completed projects, technical resources, and professional services.
+  css/style.css   Shared design (colors, fonts, layout)
+  js/site.js      Phone menu and quote form
+  js/tools.js     Calculator formulas
+  images/         Logo, favicon and social share image
+  sitemap.xml     Page list for Google
+  robots.txt      Tells search engines where the sitemap is
 
-Template Information:
+The site is published by GitHub Pages
+(.github/workflows/static.yml). Every commit to the main branch
+goes live at astyg.com in about a minute.
 
-Original Template:
-Strongly Typed by HTML5 UP
-https://html5up.net
 
-Template Author:
-AJ Kohn (@ajlkn)
+TO TURN ON THE QUOTE FORM
 
-License:
-CCA 3.0 License
-https://html5up.net/license
+  1. Go to https://web3forms.com and enter info@astyg.com.
+  2. Copy the Access Key they email you.
+  3. In contact.html, replace YOUR_ACCESS_KEY_HERE with the key.
 
-Customized by:
-ASTYG Engineering Services
 
-Credits:
-
-Icons:
-Font Awesome
-
-Libraries:
-jQuery
-
-Framework Components:
-Responsive Tools
-
-All engineering content, project information, graphics,
-logos, and branding elements are the property of
-ASTYG Engineering Services unless otherwise noted.
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+All content, logos and branding are the property of
+ASTYG Engineering Services.
