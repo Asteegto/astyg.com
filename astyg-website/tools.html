@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Tools | ASTYG Engineering Services</title>
+<meta name="description" content="Free quick estimates for aircon size (BTU/h, tons, HP), water tank size and generator (genset) size. Rough sizing for early planning and budgeting.">
+<link rel="canonical" href="https://astyg.com/tools.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ASTYG Engineering Services">
+<meta property="og:title" content="Free Tools | ASTYG Engineering Services">
+<meta property="og:description" content="Free quick estimates for aircon size (BTU/h, tons, HP), water tank size and generator (genset) size. Rough sizing for early planning and budgeting.">
+<meta property="og:url" content="https://astyg.com/tools.html">
+<meta property="og:image" content="https://astyg.com/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="images/astyg-shield.png?v=4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=5">
+</head>
+<body>
+<header class="site-header">
+  <div class="topbar">
+    <a class="logo" href="index.html" aria-label="ASTYG Engineering Services home">
+      <img src="images/astyg-shield.png?v=4" alt="" width="46" height="46">
+      <img src="images/astyg-wordmark.png?v=4" alt="ASTYG Engineering Services" height="46">
+    </a>
+    <nav class="menu" aria-label="Main"><a href="index.html">Home</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="training.html">Training</a><a href="tools.html" class="on">Tools</a><a href="contact.html">Contact</a></nav>
+    <div class="head-cta">
+      <a class="btn quote" href="contact.html">Get a quote</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="service-strip" aria-label="Services"><a href="mep-services.html">MEP Services</a><a href="hvac.html">HVAC</a><a href="plumbing.html">Plumbing</a><a href="fire-protection.html">Fire Protection</a><a href="pumps.html">Pumps</a><a href="lifts.html">Lifts</a><a href="gensets.html">Gensets</a></nav>
+</header>
+<main>
+<section class="hero short"><div class="wrap">
+  <div class="crumb"><a href="index.html">Home</a> / Tools</div>
+  <div class="eyebrow">Free tools</div>
+  <h1>Quick estimates before you talk to a supplier.</h1>
+  <p class="lead">Rough sizing for early planning and budgeting, so you know if a quotation makes sense. For permits and final equipment selection, you need a proper engineering calculation.</p>
+  <a class="btn" href="#aircon">Aircon size</a><a class="btn ghost" href="#water">Water tank</a><a class="btn ghost" href="#genset">Genset size</a>
+</div></section>
+
+<section class="sec tint" id="aircon"><div class="wrap">
+  <div class="sec-head"><div class="eyebrow">Tool 01</div><h2 class="t">How big should my <span>aircon</span> be?</h2><p class="sub">For one room. Enter the room size and how many people are usually inside.</p></div>
+  <div class="tool">
+    <form class="panel" id="ac-form" onsubmit="return false">
+      <div class="field"><label for="ac-type">What kind of room?</label>
+        <select id="ac-type"><option value="bedroom">Bedroom</option><option value="living">Living / dining room</option><option value="office" selected>Office</option><option value="retail">Store / retail</option><option value="classroom">Classroom / conference room</option><option value="restaurant">Restaurant / eatery</option></select></div>
+      <div class="row3">
+        <div class="field"><label for="ac-l">Length (m)</label><input type="number" id="ac-l" value="5" min="0" step="0.1" inputmode="decimal"></div>
+        <div class="field"><label for="ac-w">Width (m)</label><input type="number" id="ac-w" value="4" min="0" step="0.1" inputmode="decimal"></div>
+        <div class="field"><label for="ac-h">Ceiling (m)</label><input type="number" id="ac-h" value="2.7" min="2" step="0.1" inputmode="decimal"></div>
+      </div>
+      <div class="field"><label for="ac-p">People usually in the room</label><input type="number" id="ac-p" value="4" min="0" step="1" inputmode="numeric"></div>
+      <label class="cb"><input type="checkbox" id="ac-roof"> Roof directly above (top floor)</label>
+      <label class="cb"><input type="checkbox" id="ac-sun"> Strong afternoon sun / west-facing windows</label>
+    </form>
+    <div class="result" id="ac-out" aria-live="polite"></div>
+  </div>
+</div></section>
+
+<section class="sec" id="water"><div class="wrap">
+  <div class="sec-head"><div class="eyebrow">Tool 02</div><h2 class="t">How big should my <span>water tank</span> be?</h2><p class="sub">For domestic water: drinking, toilets, showers and washing.</p></div>
+  <div class="tool">
+    <form class="panel" id="wt-form" onsubmit="return false">
+      <div class="field"><label for="wt-type">Type of building</label>
+        <select id="wt-type"><option value="house">House / residential (per person)</option><option value="office">Office (per employee)</option><option value="school">School (per student)</option><option value="hotel">Hotel / resort (per guest)</option><option value="clinic">Clinic / hospital (per bed)</option></select></div>
+      <div class="row3">
+        <div class="field"><label for="wt-p">Number of people</label><input type="number" id="wt-p" value="6" min="0" step="1" inputmode="numeric"></div>
+        <div class="field"><label for="wt-lpd">Liters per person/day</label><input type="number" id="wt-lpd" value="150" min="0" step="5" inputmode="numeric"></div>
+        <div class="field"><label for="wt-d">Days of storage</label><input type="number" id="wt-d" value="1" min="0.5" step="0.5" inputmode="decimal"></div>
+      </div>
+      <p class="hint">Liters per person fills in automatically when you change the building type. Use 2 or more days if water service in your area is unreliable.</p>
+    </form>
+    <div class="result" id="wt-out" aria-live="polite"></div>
+  </div>
+</div></section>
+
+<section class="sec tint" id="genset"><div class="wrap">
+  <div class="sec-head"><div class="eyebrow">Tool 03</div><h2 class="t">What size <span>generator</span> do I need?</h2><p class="sub">List only what must keep running during a brownout.</p></div>
+  <div class="tool">
+    <form class="panel" id="gs-form" onsubmit="return false">
+      <div class="row2">
+        <div class="field"><label for="gs-ac">Total aircon HP to back up</label><input type="number" id="gs-ac" value="6" min="0" step="0.5" inputmode="decimal"><p class="hint">Add up the HP of every aircon. Example: 3 × 2 HP = 6</p></div>
+        <div class="field"><label for="gs-lights">Lights and outlets (kW)</label><input type="number" id="gs-lights" value="3" min="0" step="0.5" inputmode="decimal"><p class="hint">Small store: about 2–5 kW</p></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="gs-motor">Biggest motor or pump (kW)</label><input type="number" id="gs-motor" value="1.5" min="0" step="0.5" inputmode="decimal"><p class="hint">1 HP motor ≈ 0.75 kW</p></div>
+        <div class="field"><label for="gs-other">Other equipment (kW)</label><input type="number" id="gs-other" value="2" min="0" step="0.5" inputmode="decimal"><p class="hint">Freezers, computers, machines</p></div>
+      </div>
+    </form>
+    <div class="result" id="gs-out" aria-live="polite"></div>
+  </div>
+</div></section>
+<section class="cta"><div class="wrap">
+  <div><h2>Need the real numbers?</h2><p>These are rough estimates. For permits, BFP and buying equipment, let us do the proper calculation.</p></div>
+  <div><a class="btn" href="viber://chat?number=%2B639269888890">Message us on Viber</a><a class="btn ghost" href="contact.html">Get a quote</a></div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img class="shield" src="images/astyg-shield.png?v=4" alt="ASTYG">
+        <p>Engineering Excellence Through Practical Design, Code Compliance, and Cost-Effective Solutions.</p>
+        <p>Not sure who to call for your building? Call us. If it's not our work, we'll tell you who to approach.</p>
+      </div>
+      <div><h4>Services</h4><ul><li><a href="mep-services.html">MEP Services</a></li><li><a href="hvac.html">HVAC</a></li><li><a href="plumbing.html">Plumbing</a></li><li><a href="fire-protection.html">Fire Protection</a></li><li><a href="pumps.html">Pumps</a></li><li><a href="lifts.html">Lifts</a></li><li><a href="gensets.html">Gensets</a></li></ul></div>
+      <div><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="training.html">Training</a></li><li><a href="tools.html">Tools</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul>
+        <li>Koronadal City, South Cotabato, Philippines</li>
+        <li><a href="tel:+639269888890">+63 926 988 8890</a></li>
+        <li><a href="viber://chat?number=%2B639269888890">Viber: +63 926 988 8890</a></li>
+        <li><a href="mailto:info@astyg.com">info@astyg.com</a></li>
+        <li><a href="https://www.facebook.com/search/top?q=ASTYG%20Engineering%20Services" rel="noopener">Facebook: ASTYG Engineering Services</a></li>
+      </ul></div>
+    </div>
+    <div class="copy">© ASTYG Engineering Services. All rights reserved. MEP Services · HVAC · Plumbing · Fire Protection · Pumps · Lifts · Gensets</div>
+  </div>
+</footer>
+<a class="viber-float" href="viber://chat?number=%2B639269888890" aria-label="Message us on Viber">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 5.9 2 10.7c0 2.7 1.4 5.1 3.6 6.7V22l3.9-2.2c.8.2 1.6.3 2.5.3 5.5 0 10-3.9 10-8.7S17.5 2 12 2zm4.7 12.1c-.2.6-1.2 1.1-1.7 1.2-.4 0-.9.1-2.9-.7-2.4-1-4-3.4-4.1-3.6-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.8.9c.3.1.4.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+  <span>Viber us</span>
+</a>
+<script src="js/site.js?v=5"></script>
+</body>
+</html>

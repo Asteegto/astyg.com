@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://astyg.com/</loc><lastmod>2026-10-09</lastmod></url>
-  <url><loc>https://astyg.com/services.html</loc><lastmod>2026-10-09</lastmod></url>
-  <url><loc>https://astyg.com/projects.html</loc><lastmod>2026-10-09</lastmod></url>
-  <url><loc>https://astyg.com/training.html</loc><lastmod>2026-10-09</lastmod></url>
-  <url><loc>https://astyg.com/tools.html</loc><lastmod>2026-10-09</lastmod></url>
-  <url><loc>https://astyg.com/contact.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://astyg.com/</loc></url>
+  <url><loc>https://astyg.com/services.html</loc></url>
+  <url><loc>https://astyg.com/mep-services.html</loc></url>
+  <url><loc>https://astyg.com/hvac.html</loc></url>
+  <url><loc>https://astyg.com/plumbing.html</loc></url>
+  <url><loc>https://astyg.com/fire-protection.html</loc></url>
+  <url><loc>https://astyg.com/pumps.html</loc></url>
+  <url><loc>https://astyg.com/lifts.html</loc></url>
+  <url><loc>https://astyg.com/gensets.html</loc></url>
+  <url><loc>https://astyg.com/projects.html</loc></url>
+  <url><loc>https://astyg.com/training.html</loc></url>
+  <url><loc>https://astyg.com/tools.html</loc></url>
+  <url><loc>https://astyg.com/contact.html</loc></url>
 </urlset>
